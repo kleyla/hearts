@@ -1,0 +1,61 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+:root {
+  --top: 1vh;
+  --alto: 98vh;
+}
+
+#corazones {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.corazon {
+  position: absolute;
+  /* height: 96vh; */
+  width: auto;
+  transition: width 1s, height 1s;
+}
+.c1 {
+  height: var(--alto);
+}
+.c2 {
+  height: calc(var(--alto) - 10vh);
+}
+.c3 {
+  height: calc(var(--alto) - 20vh);
+}
+.c4 {
+  height: calc(var(--alto) - 30vh);
+}
+.c5 {
+  height: calc(var(--alto) - 40vh);
+}
+.c6 {
+  height: calc(var(--alto) - 50vh);
+}
+.show {
+  height: 100vh;
+  width: auto;
+}
+.hide {
+  height: 0;
+  width: auto;
+}
+
+.txt {
+  /* position: absolute; */
+  /* top: 30vh; */
+  z-index: 1;
+  font-family: "Srisakdi", cursive;
+  font-size: 70px;
+  text-align: center;
+}
